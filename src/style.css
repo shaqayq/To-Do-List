@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+.newItem {
+  width: 399px;
+  display: inline;
+  border: none;
+}
+
+.ListItem {
+  width: 498px;
+  margin: 101px;
+}
+
+.lists {
+  list-style: none;
+}
+
+.lists li {
+  display: flex;
+  column-gap: 22px;
+}
+
+.lists li i {
+  cursor: all-scroll;
+  margin-left: auto;
+}
+
+.box {
+  cursor: pointer;
+}
+
+.LiList {
+  cursor: pointer;
+}
+
+h6 {
+  display: inline;
+  margin-right: 64%;
+}
+
+.foot {
+  border: 1px solid gray;
+  height: 51px;
+  text-align: center;
+  background-color: #e5e1e1;
+}
+
+.foot p {
+  margin: 13px;
+  cursor: pointer;
+}
