@@ -94,7 +94,7 @@ funbtn.forEach((ele) => {
     parentli.appendChild(trash);
 
     // remove element
-    trash.addEventListener('click', () => {
+    trash.addEventListener('change', () => {
       const newLists = doLists.filter((e) => e.index != id);
       for (let i = 0; i < newLists.length; i += 1) {
         newLists[i].index = i;

@@ -1,6 +1,10 @@
 export function checked(element, arr) {
   const num = element.id;
-  arr[num].completed = true;
+  if( arr[num].completed == false){
+    arr[num].completed = true;
+   }else {
+    arr[num].completed = false;
+   }
   localStorage.setItem('Do-Lists', JSON.stringify(arr));
   window.location.reload();
 }
