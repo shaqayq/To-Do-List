@@ -1,5 +1,6 @@
 import _, { reduce } from 'lodash';
 import './style.css';
+import { checked, clearChecked } from './update.js';
 
 let doLists = [];
 
@@ -38,6 +39,10 @@ doLists.forEach((key) => {
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
   checkbox.classList.add('box');
+  checkbox.setAttribute('id', key.index);
+  if (key.completed == true) {
+    checkbox.checked = true;
+  }
   li.appendChild(checkbox);
 
   const label = document.createElement('input');
@@ -103,7 +108,13 @@ funbtn.forEach((ele) => {
 // remove all
 const clear = document.querySelector('.clearAll');
 clear.addEventListener('click', () => {
-  doLists = [];
-  localStorage.setItem('Do-Lists', JSON.stringify(doLists));
-  window.location.reload();
+  clearChecked(doLists);
+});
+
+const check = document.querySelectorAll('.box');
+
+check.forEach((ele) => {
+  ele.addEventListener('click', () => {
+    checked(ele, doLists);
+  });
 });
