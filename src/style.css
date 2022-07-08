@@ -43,6 +43,11 @@ h6 {
   margin-right: 64%;
 }
 
+.label {
+  border: none;
+  background-color: #fff;
+}
+
 .foot {
   border: 1px solid gray;
   height: 51px;
