@@ -7,7 +7,7 @@
 
 ## Built With
 
-- Major languages: HTML , CSS , javascript
+- Major languages: HTML , CSS , JavaScript.
 
 ## Live Demo (if available)
 [Live Demo Link](https://shaqayq.github.io/To-Do-List/)
